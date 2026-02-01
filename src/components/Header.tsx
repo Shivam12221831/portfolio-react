@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import user_pic from "../assets/logos/icons8-user-40.png";
+// import user_pic from "../assets/logos/icons8-user-40.png";
 import { Menu, X } from "lucide-react";
 import { NavList } from "./NavList";
 
@@ -24,8 +24,8 @@ const Header = ({ activeSection }: HeaderProps) => {
                 size="lg"
                 className="ml-4 h-full rounded-none font-serif font-semibold text-3xl cursor-pointer bg-transparent hover:bg-transparent hover:text-amber-500 text-[#D6D3D1]"
             >
-                <img src={user_pic} alt="user" className="rounded-full mr-2" />
-                Shivam
+                {/* <img src={user_pic} alt="user" className="rounded-full mr-2" /> */}
+                Portfolio
             </Button>
 
             <div className="hidden lg:flex ml-auto mr-5">
