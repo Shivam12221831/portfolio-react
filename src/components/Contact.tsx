@@ -30,6 +30,7 @@ import {
 const formSchema = z.object({
     fullname: z
         .string()
+        .trim()
         .min(2, "Full name must be at least 2 characters")
         .max(50, "Full name must be at most 50 characters"),
 
@@ -117,9 +118,9 @@ export default function Contact() {
     return (
         <div className="py-16 font-serif">
             <div className="ml-10">
-                <h1 className="ml-10 text-4xl font-semibold font-serif underline">CONTACT</h1>
+                <h1 className="sm:ml-10 text-4xl font-semibold font-serif underline">CONTACT</h1>
             </div>
-            <div className="mx-20 mt-2 justify-center items-center grid grid-col-1 md:grid-cols-6">
+            <div className="mx-9 sm:mx-20 mt-4 items-center grid grid-col-1 lg:grid-cols-6">
                 <Card style={{backgroundColor: "#F1F5EB"}} className="w-full px-4 border-none md:col-span-3">
                     <CardHeader>
                         <CardDescription className="text-md text-black">
@@ -191,7 +192,7 @@ export default function Contact() {
                         </Field>
                     </CardFooter>
                 </Card>
-                <div className='col-span-3'>
+                <div className='hidden lg:inline-block col-span-3'>
                     <img src={contact_img} className='mx-auto rounded-full w-180 h-180' alt="Contact_Img" />
                 </div>
             </div>

@@ -48,7 +48,7 @@ type Experience = {
 type Data = {
     name: string,
     title: string,
-    bio: string,
+    bio: string[],
     education: Education[],
     experience: Experience[],
     skills: Skills[],
@@ -58,7 +58,11 @@ type Data = {
 export const data: Data = {
     name: "Shivam Singh",
     title: "Frontend Developer specializing in React and TypeScript, with a strong focus on performance, scalability, and reusable UI components. Passionate about writing clean code and building real-world products.",
-    bio: "I am a passionate Frontend Developer with a strong foundation in modern web technologies and a growing focus on building clean, scalable, and user-centric applications. My core skill set includes JavaScript, TypeScript, React, and Tailwind CSS, which I use to develop responsive interfaces and reusable UI components. I enjoy working with component-based architectures and understand the importance of maintainable code, proper state management, and performance optimization. Through hands-on projects, I have gained practical experience in translating design concepts into functional web interfaces while ensuring accessibility and cross-device compatibility. I pay close attention to details such as semantic HTML, clean styling practices, and consistent code structure, as I believe these aspects significantly improve long-term project quality. I am comfortable working with version control systems like Git and understand modern development workflows, including modular folder structures and best practices for scaling frontend applications. Beyond implementation, I actively seek to understand how things work under the hood—whether it’s JavaScript execution, browser rendering, or React’s reconciliation process. This curiosity helps me write better code and make informed technical decisions. I see frontend development not just as writing UI code, but as creating meaningful experiences that balance aesthetics, usability, and performance. I strongly believe that continuous learning and adaptability are essential in the ever-evolving field of web development. I consistently invest time in strengthening my fundamentals, exploring advanced JavaScript concepts, and deepening my understanding of TypeScript for type safety and scalability. I enjoy solving problems, breaking complex requirements into manageable components, and improving existing solutions through refactoring and optimization. While working on projects, I focus on writing predictable, readable code and following best practices that make collaboration easier and applications more reliable. I am particularly interested in building real-world products that solve practical problems and provide intuitive user experiences. Feedback-driven improvement is a key part of my growth process—I actively review my work, identify gaps, and refine my approach with each project. Looking ahead, my goal is to grow into a well-rounded developer who can contribute effectively to larger codebases, collaborate with cross-functional teams, and eventually take ownership of complex frontend systems. ",
+    bio: [
+        "I’m a frontend developer focused on building clean, responsive, and intuitive user interfaces that are reliable, scalable, and thoughtfully engineered. I work extensively with React and TypeScript, with a strong emphasis on solid component architecture, predictable state management, and long-term code maintainability. I see UI development as a balance between design and engineering, and I aim to create interfaces that are visually refined, performant, accessible, and consistent across different devices, screen sizes, and usage contexts.",
+        "I place strong value on understanding how modern web applications function beneath the surface. From React’s rendering behavior and hooks lifecycle to browser APIs, performance optimization, and rendering trade-offs, I go beyond surface-level implementation to build solutions that scale. I design components with reusability, accessibility, and clarity in mind, making deliberate technical decisions rather than relying on short-term fixes. Continuous learning, experimentation, and applying best practices are central to how I improve both my technical depth and the quality of the products I build.",
+        "I take full ownership of my work and enjoy building products end-to-end, from planning and structure to refinement, optimization, and final polish. I value clear communication, consistency, and thoughtful collaboration, and I’m comfortable contributing independently while working effectively within a team. At this stage, I’m focused on growing as a frontend engineer by solving real-world problems, strengthening core fundamentals, and staying aligned with evolving web technologies, modern development workflows, and industry best practices.",
+    ],
     education: [
         {
             degree: "Bachelor Degree",
@@ -91,8 +95,8 @@ export const data: Data = {
         {logo: css_pic, skill: "CSS"},
         {logo: js_pic, skill: "JavaScript"},
         {logo: react_pic, skill: "React"},
-        {logo: ts_pic, skill: "TypeScript"},
         {logo: bootstrap_pic, skill: "Bootstrap"},
+        {logo: ts_pic, skill: "TypeScript"},
         {logo: tailwind_pic, skill: "Tailwind"},
         {logo: mongodb_pic, skill: "MongoDB"},
         {logo: sql_pic, skill: "SQL"},

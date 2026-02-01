@@ -10,7 +10,6 @@ type ObserverProps = {
 }
 
 export const SectionObserver = ({id, onActive, children, className=""} : ObserverProps) => {
-
     const { ref, inView } = useInView({
         threshold: 0.6,
     });

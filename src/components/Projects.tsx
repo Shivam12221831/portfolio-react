@@ -11,26 +11,24 @@ import '../assets/swiperStyles.css';
 import { Pagination, Navigation } from 'swiper/modules';
 
 const Projects = () => {
-
     return (
         <div className="pt-20" id="projects">
             <div className="">
-                <h1 className='ml-20 text-4xl font-semibold font-serif underline'>PROJECTS</h1>
+                <h1 className='ml-10 sm:ml-20 text-4xl font-semibold font-serif underline'>PROJECTS</h1>
                 <div className='mt-10 flex justify-center'>
                     <Swiper
-                        // slidesPerView={3}
                         spaceBetween={30}
                         navigation={true}
                         modules={[Pagination, Navigation]}
                         className="mySwiper"
                         breakpoints={{
                             0: { slidesPerView: 1 },
-                            900: { slidesPerView: 2 },
-                            1250: { slidesPerView: 3 },
+                            1000: { slidesPerView: 2 },
+                            1450: { slidesPerView: 3 },
                         }}
                     >
                         {data.projects.map((project) => (
-                            <SwiperSlide className=' font-serif'>
+                            <SwiperSlide className='font-serif'>
                                 <div className=''>
                                     <img className='project-img' src={project.pic} alt="Project_img" />
                                 </div>
